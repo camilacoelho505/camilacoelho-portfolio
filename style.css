@@ -1,0 +1,150 @@
+/* ====== GENERAL STYLES ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #111;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ====== HERO ====== */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, #007cf0, #00dfd8);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero .intro {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  background: white;
+  color: #007cf0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* ====== PROJECTS GRID ====== */
+.projects {
+  padding: 4rem 2rem;
+}
+
+.projects h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info .meta {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ====== ABOUT & CV ====== */
+.about, .cv {
+  padding: 4rem 2rem;
+  background: #f8f8f8;
+}
+
+.about h2, .cv h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f0f0f0;
+}
+
+.footer .btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
